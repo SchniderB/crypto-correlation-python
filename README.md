@@ -41,10 +41,11 @@ price   volume  time    buy/sell        market/limit    miscellaneous   Since
 ...
 ```
 The input file `crypto_history/LSKEUR_close_price.txt` was provided as an example. In case you want to use a different 
-format, make sure to modify the function `extract_mean_price_ph` in the script `price_correlation.py`.
+format, make sure to modify the function `extract_mean_price_ph` in the script `price_correlation.py`. My cryptocurrency 
+price history extraction workflow can be found in my repository [crypto-history-extraction](https://github.com/SchniderB/crypto-history-extraction).
 
 ### Date and cryptocurrency list configuration
-The start date and end date timestampps should be defined in `config.txt` (please refer to the file for more detail 
+The start date and end date timestamps should be defined in `config.txt` (please refer to the file for more details 
 regarding the format). The graph first start and second start dates, which are simply two different time frames for 
 the graphs should be defined in this same configuration file. A large list of cryptocurrency symbols should be defined 
 in this same configuration file to compute large correlations. A short list of cryptocurrency symbols should be defined 
