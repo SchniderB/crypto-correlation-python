@@ -1,0 +1,6 @@
+start_time=1380585600
+end_time=1597449600
+first_graph_start=1546300800
+second_graph_start=1577836800
+large_list=ADA,XXRP,XXBT,XMLN,DASH,XETH,LINK,XLTC
+short_list=XXRP,XXBT,XETH,XLTC
