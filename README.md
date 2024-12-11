@@ -1,7 +1,7 @@
 # Cryptocurrency price correlations
 
 ## Aim of the project
-This project explains how to compute price correlations between different cryptocurrencies in Python based on price history 
+This project explains how to compute price correlations between different cryptocurrencies in Python based on price history
 files of cryptocurrencies of interest.
 
 ## Dependencies
@@ -31,7 +31,7 @@ source crypto-correlations/bin/activate
 
 ## Instructions
 ### Input files
-Each cryptocurrency history data file should be stored in the folder `crypto_history`. The price correlation script 
+Each cryptocurrency history data file should be stored in the folder `crypto_history`. The price correlation script
 `price_correlations.py` will extract the history data based on the following format:
 ```
 price   volume  time    buy/sell        market/limit    miscellaneous   Since
@@ -40,19 +40,19 @@ price   volume  time    buy/sell        market/limit    miscellaneous   Since
 1.125000        998.40255591    1606777840.5439 b       m               1606777200.0
 ...
 ```
-The input file `crypto_history/LSKEUR_close_price.txt` was provided as an example. In case you want to use a different 
-format, make sure to modify the function `extract_mean_price_ph` in the script `price_correlation.py`. My cryptocurrency 
+The input file `crypto_history/LSKEUR_close_price.txt` was provided as an example. In case you want to use a different
+format, make sure to modify the function `extract_mean_price_ph` in the script `price_correlation.py`. My cryptocurrency
 price history extraction workflow can be found in my repository [crypto-history-extraction](https://github.com/SchniderB/crypto-history-extraction).
 
 ### Date and cryptocurrency list configuration
-The start date and end date timestamps should be defined in `config.txt` (please refer to the file for more details 
-regarding the format). The graph first start and second start dates, which are simply two different time frames for 
-the graphs should be defined in this same configuration file. A large list of cryptocurrency symbols should be defined 
-in this same configuration file to compute large correlations. A short list of cryptocurrency symbols should be defined 
+The start date and end date timestamps should be defined in `config.txt` (please refer to the file for more details
+regarding the format). The graph first start and second start dates, which are simply two different time frames for
+the graphs should be defined in this same configuration file. A large list of cryptocurrency symbols should be defined
+in this same configuration file to compute large correlations. A short list of cryptocurrency symbols should be defined
 in this same configuration file.
 
 ### Compute the correlations
-Once the input price history files and the configuration file are ready, the following command will compute the 
+Once the input price history files and the configuration file are ready, the following command will compute the
 correlations:
 ```bash
 python3 price_correlation.py
@@ -70,3 +70,9 @@ python3 price_correlation.py
 
 ### Warning
 There seems to be an issue with the significance symbol association on the plots.
+
+
+## Project Timeline
+- Start Date: November 27, 2020
+- Completion Date: November 28, 2020
+- Maintenance status: Inactive
